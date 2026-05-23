@@ -40,7 +40,7 @@ Building things. Learning more. Shipping fast.
 
 **Contact**
 
-doggemst@gmail.com
+doggemst@gmail.com &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/douglas-mlm/)
 
 <br>
 <br>
