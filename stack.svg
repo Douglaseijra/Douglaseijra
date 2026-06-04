@@ -1,0 +1,180 @@
+<svg width="860" height="244" viewBox="0 0 860 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+    <stop offset="0%" stop-color="#F3F3F3"/>
+    <stop offset="100%" stop-color="#C8C8C8"/>
+  </radialGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.84"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.52"/>
+  </linearGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.42"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.00"/>
+  </linearGradient>
+  <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.96"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.66"/>
+  </linearGradient>
+  <filter id="drop" x="-5%" y="-10%" width="110%" height="130%">
+    <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#141414" flood-opacity="0.08"/>
+  </filter>
+  <style>
+    @keyframes slideIn {
+      from { opacity:0; transform:translateX(-12px); }
+      to   { opacity:1; transform:translateX(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity:0; }
+      to   { opacity:1; }
+    }
+    .lbl  { opacity:0; animation: fadeIn .5s ease-out .05s forwards; }
+    .lbl2 { opacity:0; animation: fadeIn .5s ease-out .60s forwards; }
+    .div1 { opacity:0; animation: fadeIn .4s ease-out .56s forwards; }
+    .p0  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .10s forwards; }
+    .p1  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .18s forwards; }
+    .p2  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .26s forwards; }
+    .p3  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .34s forwards; }
+    .p4  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .42s forwards; }
+    .p5  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .50s forwards; }
+    .p6  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .58s forwards; }
+    .p7  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .66s forwards; }
+    .p8  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .74s forwards; }
+    .p9  { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .82s forwards; }
+    .p10 { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .90s forwards; }
+    .p11 { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) .98s forwards; }
+    .p12 { opacity:0; animation: slideIn .45s cubic-bezier(.22,1,.36,1) 1.06s forwards; }
+  </style>
+</defs>
+
+<!-- Background -->
+<rect width="860" height="244" fill="url(#bg)"/>
+
+<!-- Glass card -->
+<rect x="28" y="28" width="804" height="188" rx="20" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="1" filter="url(#drop)"/>
+
+<!-- Top sheen -->
+<rect x="29" y="29" width="802" height="94" rx="18" fill="url(#sheen)"/>
+
+<!-- LANGUAGES label -->
+<text class="lbl" x="60" y="70"
+  font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+  font-size="11" font-weight="500" letter-spacing="0.05em" fill="#8A8A87">LANGUAGES</text>
+
+<!-- Language pills  y_top=78  cy=95  text_y=100 -->
+
+<!-- p0: JavaScript x=60 w=112 -->
+<g class="p0">
+  <rect x="60" y="78" width="112" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="61" y="79" width="110" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="79" cy="95" r="5" fill="#E68343"/>
+  <text x="90" y="100" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">JavaScript</text>
+</g>
+
+<!-- p1: TypeScript x=180 w=110 -->
+<g class="p1">
+  <rect x="180" y="78" width="110" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="181" y="79" width="108" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="199" cy="95" r="5" fill="#2E7DF6"/>
+  <text x="210" y="100" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">TypeScript</text>
+</g>
+
+<!-- p2: Python x=298 w=86 -->
+<g class="p2">
+  <rect x="298" y="78" width="86" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="299" y="79" width="84" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="317" cy="95" r="5" fill="#4A4A4A"/>
+  <text x="328" y="100" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Python</text>
+</g>
+
+<!-- p3: Go x=392 w=58 -->
+<g class="p3">
+  <rect x="392" y="78" width="58" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="393" y="79" width="56" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="411" cy="95" r="5" fill="#00ADD8"/>
+  <text x="422" y="100" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Go</text>
+</g>
+
+<!-- p4: Rust x=458 w=70 -->
+<g class="p4">
+  <rect x="458" y="78" width="70" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="459" y="79" width="68" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="477" cy="95" r="5" fill="#B86A2E"/>
+  <text x="488" y="100" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Rust</text>
+</g>
+
+<!-- p5: Swift x=536 w=72 -->
+<g class="p5">
+  <rect x="536" y="78" width="72" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="537" y="79" width="70" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="555" cy="95" r="5" fill="#F05138"/>
+  <text x="566" y="100" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Swift</text>
+</g>
+
+<!-- p6: Kotlin x=616 w=80 -->
+<g class="p6">
+  <rect x="616" y="78" width="80" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="617" y="79" width="78" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="635" cy="95" r="5" fill="#C16FE0"/>
+  <text x="646" y="100" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Kotlin</text>
+</g>
+
+<!-- Divider -->
+<rect class="div1" x="60" y="128" width="740" height="1" fill="#E7E6E2"/>
+
+<!-- TOOLS label -->
+<text class="lbl2" x="60" y="148"
+  font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+  font-size="11" font-weight="500" letter-spacing="0.05em" fill="#8A8A87">TOOLS</text>
+
+<!-- Tool pills  y_top=156  cy=173  text_y=178 -->
+
+<!-- p7: React x=60 w=82 -->
+<g class="p7">
+  <rect x="60" y="156" width="82" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="61" y="157" width="80" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="79" cy="173" r="5" fill="#61DAFB"/>
+  <text x="90" y="178" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">React</text>
+</g>
+
+<!-- p8: Next.js x=150 w=86 -->
+<g class="p8">
+  <rect x="150" y="156" width="86" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="151" y="157" width="84" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="169" cy="173" r="5" fill="#1A1A1A"/>
+  <text x="180" y="178" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Next.js</text>
+</g>
+
+<!-- p9: Tailwind x=244 w=90 -->
+<g class="p9">
+  <rect x="244" y="156" width="90" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="245" y="157" width="88" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="263" cy="173" r="5" fill="#06B6D4"/>
+  <text x="274" y="178" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Tailwind</text>
+</g>
+
+<!-- p10: Node.js x=342 w=86 -->
+<g class="p10">
+  <rect x="342" y="156" width="86" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="343" y="157" width="84" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="361" cy="173" r="5" fill="#339933"/>
+  <text x="372" y="178" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Node.js</text>
+</g>
+
+<!-- p11: Supabase x=436 w=96 -->
+<g class="p11">
+  <rect x="436" y="156" width="96" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="437" y="157" width="94" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="455" cy="173" r="5" fill="#3ECF8E"/>
+  <text x="466" y="178" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Supabase</text>
+</g>
+
+<!-- p12: Docker x=540 w=84 -->
+<g class="p12">
+  <rect x="540" y="156" width="84" height="34" rx="17" fill="url(#pill)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="541" y="157" width="82" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="559" cy="173" r="5" fill="#2496ED"/>
+  <text x="570" y="178" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="500" fill="#1A1A1A">Docker</text>
+</g>
+
+</svg>
