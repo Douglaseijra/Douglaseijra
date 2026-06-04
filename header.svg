@@ -1,0 +1,97 @@
+<svg width="860" height="240" viewBox="0 0 860 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+    <stop offset="0%" stop-color="#F3F3F3"/>
+    <stop offset="100%" stop-color="#C8C8C8"/>
+  </radialGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.84"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.52"/>
+  </linearGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.42"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.00"/>
+  </linearGradient>
+  <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.96"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.62"/>
+  </linearGradient>
+  <filter id="drop" x="-5%" y="-10%" width="110%" height="130%">
+    <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#141414" flood-opacity="0.08"/>
+  </filter>
+  <style>
+    @keyframes pulse {
+      0%,100% { opacity:.88; }
+      50%      { opacity:.38; }
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(9px); }
+      to   { opacity:1; transform:translateY(0px); }
+    }
+    .mark-wrap {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: pulse 2.8s ease-in-out infinite;
+    }
+    .name  { opacity:0; animation: fadeUp .75s cubic-bezier(.22,1,.36,1) .10s forwards; }
+    .sub   { opacity:0; animation: fadeUp .75s cubic-bezier(.22,1,.36,1) .26s forwards; }
+    .tag   { opacity:0; animation: fadeUp .75s cubic-bezier(.22,1,.36,1) .42s forwards; }
+    .brow  { opacity:0; animation: fadeUp .75s cubic-bezier(.22,1,.36,1) .58s forwards; }
+  </style>
+</defs>
+
+<!-- Background -->
+<rect width="860" height="240" fill="url(#bg)"/>
+
+<!-- Glass card -->
+<rect x="28" y="28" width="804" height="184" rx="20" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.72" stroke-width="1" filter="url(#drop)"/>
+
+<!-- Top sheen -->
+<rect x="29" y="29" width="802" height="100" rx="18" fill="url(#sheen)"/>
+
+<!-- 8-petal Eijra mark (centered at 430,68) -->
+<g transform="translate(430,68)" class="mark-wrap">
+  <path d="M0 0 C-3.5 -4,-5 -11,0 -16 C5 -11,3.5 -4,0 0" fill="#0E0E0E" transform="rotate(0)"/>
+  <path d="M0 0 C-3.5 -4,-5 -11,0 -16 C5 -11,3.5 -4,0 0" fill="#0E0E0E" transform="rotate(45)"/>
+  <path d="M0 0 C-3.5 -4,-5 -11,0 -16 C5 -11,3.5 -4,0 0" fill="#0E0E0E" transform="rotate(90)"/>
+  <path d="M0 0 C-3.5 -4,-5 -11,0 -16 C5 -11,3.5 -4,0 0" fill="#0E0E0E" transform="rotate(135)"/>
+  <path d="M0 0 C-3.5 -4,-5 -11,0 -16 C5 -11,3.5 -4,0 0" fill="#0E0E0E" transform="rotate(180)"/>
+  <path d="M0 0 C-3.5 -4,-5 -11,0 -16 C5 -11,3.5 -4,0 0" fill="#0E0E0E" transform="rotate(225)"/>
+  <path d="M0 0 C-3.5 -4,-5 -11,0 -16 C5 -11,3.5 -4,0 0" fill="#0E0E0E" transform="rotate(270)"/>
+  <path d="M0 0 C-3.5 -4,-5 -11,0 -16 C5 -11,3.5 -4,0 0" fill="#0E0E0E" transform="rotate(315)"/>
+</g>
+
+<!-- Name -->
+<text class="name" x="430" y="113" text-anchor="middle"
+  font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+  font-size="36" font-weight="600" letter-spacing="-0.72" fill="#0E0E0E">Douglas</text>
+
+<!-- Subtitle -->
+<text class="sub" x="430" y="139" text-anchor="middle"
+  font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+  font-size="15" font-weight="400" fill="#5C5C5C">Software developer · Stockholm</text>
+
+<!-- Tagline -->
+<text class="tag" x="430" y="163" text-anchor="middle"
+  font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+  font-size="13" font-weight="400" fill="#8A8A87">Building things. Learning more. Shipping fast.</text>
+
+<!-- Badge row — centered (total w=172, start=344) -->
+<g class="brow">
+  <!-- Eijra badge: x=344 w=72 -->
+  <rect x="344" y="177" width="72" height="24" rx="12" fill="url(#badge)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="345" y="178" width="70" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="357" cy="189" r="4" fill="#0E0E0E"/>
+  <text x="366" y="194" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="500" fill="#1A1A1A">Eijra</text>
+  <!-- Stockholm badge: x=424 w=92 -->
+  <rect x="424" y="177" width="92" height="24" rx="12" fill="url(#badge)" stroke="#FFFFFF" stroke-opacity="0.70" stroke-width="1"/>
+  <rect x="425" y="178" width="90" height="1.5" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+  <circle cx="437" cy="189" r="4" fill="#5C5C5C"/>
+  <text x="446" y="194" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="500" fill="#1A1A1A">Stockholm</text>
+</g>
+
+</svg>
